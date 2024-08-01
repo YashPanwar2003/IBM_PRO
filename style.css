@@ -71,6 +71,7 @@ html,body{
     margin-bottom: 20px;
 }
 .markings{
+    text-decoration: none;
     margin-top: 25px;
     margin-left: 30px;
 }
@@ -114,12 +115,16 @@ html,body{
     width: 200px;
     color: white;
     background-color: #001758;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
 
 }
 #alert1,#alert2{
-   display: none;
+    display: none;
     font-size: 15px;
     color: red;
 }
@@ -127,6 +132,50 @@ html,body{
     font-size: 20px;
     margin-right: 5px;
 }
+#recalculate{
+    margin-left: 300px;
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001758;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.result p{
+    
+    margin-bottom: 10px;
+}
+
+.result{
+    margin-left: 30px;
+    margin-top:20px ;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.hide{
+    visibility: hidden;
+  
+}
+#fact{
+    font-size: 1rem;
+    
+}
+#recalculate:hover,#button:hover{
+    background-color: #00091f;
+}
+span{
+    color: grey;
+}
+
+
 
 .fade-in{
     animation:1s ease comeup forwards ;
@@ -135,7 +184,7 @@ html,body{
 
     to{
         opacity: 1;
-        transform: scale(1);
+       
     }
     
 }
@@ -145,6 +194,6 @@ html,body{
 @keyframes comedown{
    to{
     opacity: 0;
-    transform: scale(0);
+    
    }
 }

@@ -18,8 +18,8 @@
       </div>
       <div class="options">
         <a href="./index.html" id="home">Home</a>
-        <a href="./about.html" id="about">About</a>
-        <a href="./contact.html" id="contact">Contact</a>
+        <a href="" id="about">About</a>
+        <a href="" id="contact">Contact</a>
       </div>
     </div>
 
@@ -29,71 +29,103 @@
       <p id="author"></p>
     </div>
 
-    
     <!--creation of calculator-->
     <div class="calculator">
-      <form action="">
+      <h1>Calculate Here</h1>
+      <i class="bi bi-house-door-fill markings">Home Energy</i>
 
-        <h1>Calculate Here</h1>
-        <i class="bi bi-house-door-fill markings">Home Energy</i>
-        
-        <div class="Home input">
-          <div class="input1">
-            <label for="electricbill">Monthly Electricity Bill</label>
-            <input type="number" id="electricbill" min="0" step="100" />
-          </div>
-          <div class="input2">
-            <label for="gasbill">Monthly Gas Bill</label>
-            <input type="number" id="gasbill" min="0" step="100" />
-          </div>
-          <div class="input3">
-            <label for="fuelbill">Monthly Fuel Bill</label>
-            <input type="number" id="fuelbill" min="0" step="50" />
-          </div>
+      <div class="Home input">
+        <div class="input1">
+          <label for="electricbill">Monthly Electricity Bill</label>
+          <input type="number" id="electricbill" min="0" step="100" />
         </div>
-     
-        <i class="bi bi-globe-central-south-asia markings">Travel</i>
-        <div class="Travel input">
-          <div id="vehicletravel">
-            <label for="vehicle">Miles travelled by Vehicle Anually</label>
-            <input type="number" min="0" step="1" id="vehicle" />
-          </div>
-          <div id="flightstaken">
-            <label for="flights">Flights taken in past 3 years</label>
-            <input type="number" min="0" step="1" id="flights" />
-          </div>
+        <div class="input2">
+          <label for="gasbill">Monthly Gas Bill</label>
+          <input type="number" id="gasbill" min="0" step="100" />
         </div>
-        <i class="bi bi-recycle markings">Waste</i>
-        <div class="Waste input">
-          <div id="recyclepaper">
-            <label>Do you recycle paper?</label>
-            <label class="edit" >
-              <input type="radio" value="Yes" name="paper_recycle">Yes
-            </label>
-            <label class="edit" >
-              <input type="radio" value="No" name="paper_recycle">No
-            </label>
-            <p id="alert1"><i class="bi bi-exclamation-circle"></i>This field is required</p>
-          </div>
-          <div class="recycletin">
-            <label>Do you recycle aluminium or tin?</label>
-            <label class="edit" >
-              <input type="radio" value="Yes" name="metal_recycle">Yes
-            </label>
-            <label class="edit">
-              <input type="radio" value="No" name="metal_recycle">No
-            </label>
-            <p id="alert2"><i class="bi bi-exclamation-circle"></i>This field is required</p>
+        <div class="input3">
+          <label for="fuelbill">Monthly Fuel Bill</label>
+          <input type="number" id="fuelbill" min="0" step="50" />
+        </div>
+      </div>
 
-          </div>
+      <i class="bi bi-globe-central-south-asia markings">Travel</i>
+      <div class="Travel input">
+        <div id="vehicletravel">
+          <label for="vehicle">Miles travelled by Vehicle Anually</label>
+          <input type="number" min="0" step="1" id="vehicle" />
         </div>
+        <div id="flightstaken">
+          <label for="flights">Flights taken in past 3 years</label>
+          <input type="number" min="0" step="1" id="flights" />
+        </div>
+      </div>
+      <i class="bi bi-recycle markings">Waste</i>
+      <div class="Waste input">
+        <div id="recyclepaper">
+          <label>Do you recycle paper?</label>
+          <label class="edit">
+            <input
+              type="radio"
+              id="paperyes"
+              value="Yes"
+              name="paper_recycle"
+            />Yes
+          </label>
+          <label class="edit">
+            <input
+              type="radio"
+              id="paperno"
+              value="No"
+              name="paper_recycle"
+            />No
+          </label>
+          <p id="alert1">
+            <i class="bi bi-exclamation-circle"></i>This field is required
+          </p>
+        </div>
+        <div class="recycletin">
+          <label>Do you recycle aluminium or tin?</label>
+          <label class="edit">
+            <input
+              type="radio"
+              id="tinyes"
+              value="Yes"
+              name="metal_recycle"
+            />Yes
+          </label>
+          <label class="edit">
+            <input type="radio" id="tinno" value="No" name="metal_recycle" />No
+          </label>
+          <p id="alert2">
+            <i class="bi bi-exclamation-circle"></i>This field is required
+          </p>
+        </div>
+      </div>
 
-        <button id="button" onclick="">Calculate</button>
-      </form>
+      <div id="button">Calculate</div>
     </div>
     <div class="result">
-       
-
+      <p>Carbon Footprint Based on : </p>
+      <p id="houseresult">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, dolores.
+      </p>
+      <p id="vehicleresult">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto.
+      </p>
+      <p id="wasteresult">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusamus
+        expedita praesentium laudantium magni quaerat aperiam explicabo
+        nesciunt, iure minima tempore porro voluptatibus ab, quibusdam amet
+        cumque? Quibusdam, expedita enim.
+      </p>
+      <p id="outcome">Lorem ipsum dolor sit amet.</p>
+      <p id="desc"></p>
+      <i class="bi bi-info-circle-fill"></i>
+      <p id="fact" class="hide">
+        Average Indian carbon footprint is <span>133333.33 </span> g/month.
+      </p>
+      <div id="recalculate">Recalculate</div>
     </div>
   </body>
   <footer>
