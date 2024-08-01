@@ -25,7 +25,7 @@ html,body{
 .image{
     height: 100%;
     width: auto;
-    visibility: hidden;
+    
 
 }
 .image img{
@@ -54,8 +54,22 @@ html,body{
     width: 96%;
     background-color: rgb(190, 190, 190);
     height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
    
     border-radius: 20px;
+}
+#quote{
+    
+    text-align: center;
+    font-size: 1.9rem;
+}
+#author{
+    text-align: right;
+    font-size: 1.2rem;
 }
 .calculator{
     margin-top: 30px;
@@ -83,6 +97,7 @@ html,body{
     background-color: rgb(255, 255, 255);
     
 }
+
 .input div{
     display: flex;
     flex-direction: column;
@@ -92,6 +107,7 @@ html,body{
 
 }
 .input input{
+    
     height: 35px;
     width: 70%;
     border-radius: 20px;
@@ -99,6 +115,7 @@ html,body{
     padding-left: 15px;
     font-size: smaller;
 }
+
 .Waste input{
 
     height: 20px;
@@ -152,6 +169,7 @@ html,body{
 }
 
 .result{
+    opacity: 0;
     margin-left: 30px;
     margin-top:20px ;
     display: none;
@@ -175,10 +193,8 @@ span{
     color: grey;
 }
 
-
-
 .fade-in{
-    animation:1s ease comeup forwards ;
+    animation:0.5s ease comeup forwards ;
 }
 @keyframes comeup {
 
@@ -189,7 +205,7 @@ span{
     
 }
 .fade-out{
-    animation:1s ease comedown forwards;
+    animation:0.5s ease comedown forwards;
 }
 @keyframes comedown{
    to{
