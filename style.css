@@ -64,4 +64,44 @@ html,body{
     flex-direction: column;
 
 }
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px;
+    background-color: rgb(250, 250, 250);
+}
+.input div{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: flex-start;
+    
 
+}
+.input input{
+    height: 35px;
+    width: 70%;
+    border-radius: 20px;
+    background-color: rgb(206, 204, 204);
+    padding-left: 15px;
+}
+.Waste input{
+
+    height: 20px;
+    width: fit-content;
+    margin-right: 10px;
+
+}
+.edit{
+    font-size: 1rem;
+}
+#button{
+    margin: 25px 420px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: #001758;
+    border-radius: 10px;
+
+}

@@ -22,36 +22,67 @@
         <a href="./contact.html" id="contact">Contact</a>
       </div>
     </div>
-    
-<!--creation of quote panel and news panel-->
+
+    <!--creation of quote panel and news panel-->
     <div class="panel">
-        <p id="quote"></p>
-        <p id="author"></p>
-        
+      <p id="quote"></p>
+      <p id="author"></p>
     </div>
-<!--creation of calculator-->
+    <!--creation of calculator-->
     <div class="calculator">
-
       <form action="">
-
         <div class="Home input">
-          
-
+          <div class="input1">
+            <label for="electricbill">Monthly Electricity Bill</label>
+            <input type="number" id="electricbill" min="0" step="100" />
+          </div>
+          <div class="input2">
+            <label for="gasbill">Monthly Gas Bill</label>
+            <input type="number" id="gasbill" min="0" step="100" />
+          </div>
+          <div class="input3">
+            <label for="fuelbill">Monthly Fuel Bill</label>
+            <input type="number" id="fuelbill" min="0" step="50" />
+          </div>
         </div>
-  
-      
+
         <div class="Travel input">
-
+          <div id="vehicletravel">
+            <label for="vehicle">Miles travelled by Vehicle Anually</label>
+            <input type="number" min="0" step="1" id="vehicle" />
+          </div>
+          <div id="flightstaken">
+            <label for="flights">Flights taken in past 3 years</label>
+            <input type="number" min="0" step="1" id="flights" />
+          </div>
         </div>
-        
-        <div class="Waste input"></div>
 
-        <button id="button" onclick=""></button>
+        <div class="Waste input">
+          <div id="recyclepaper">
+            <label>Do you recycle paper?</label>
+            <label class="edit" >
+              <input type="radio" value="Yes" name="paper_recycle">Yes
+            </label>
+            <label class="edit" >
+              <input type="radio" value="No" name="paper_recycle">No
+            </label>
+          </div>
+          <div class="recycletin">
+            <label>Do you recycle aluminium or tin?</label>
+            <label class="edit" >
+              <input type="radio" value="Yes" name="metal_recycle">Yes
+            </label>
+            <label class="edit">
+              <input type="radio" value="No" name="metal_recycle">No
+            </label>
+
+          </div>
+        </div>
+
+        <button id="button" onclick="">Calculate</button>
       </form>
     </div>
-    <div class="result">
-       
-    </div>
+    <div class="result"></div>
   </body>
   <footer>
     <script src="./script.js" type="module"></script>
