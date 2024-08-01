@@ -28,9 +28,15 @@
       <p id="quote"></p>
       <p id="author"></p>
     </div>
+
+    
     <!--creation of calculator-->
     <div class="calculator">
       <form action="">
+
+        <h1>Calculate Here</h1>
+        <i class="bi bi-house-door-fill markings">Home Energy</i>
+        
         <div class="Home input">
           <div class="input1">
             <label for="electricbill">Monthly Electricity Bill</label>
@@ -45,7 +51,8 @@
             <input type="number" id="fuelbill" min="0" step="50" />
           </div>
         </div>
-
+     
+        <i class="bi bi-globe-central-south-asia markings">Travel</i>
         <div class="Travel input">
           <div id="vehicletravel">
             <label for="vehicle">Miles travelled by Vehicle Anually</label>
@@ -56,7 +63,7 @@
             <input type="number" min="0" step="1" id="flights" />
           </div>
         </div>
-
+        <i class="bi bi-recycle markings">Waste</i>
         <div class="Waste input">
           <div id="recyclepaper">
             <label>Do you recycle paper?</label>
@@ -66,6 +73,7 @@
             <label class="edit" >
               <input type="radio" value="No" name="paper_recycle">No
             </label>
+            <p id="alert1"><i class="bi bi-exclamation-circle"></i>This field is required</p>
           </div>
           <div class="recycletin">
             <label>Do you recycle aluminium or tin?</label>
@@ -75,6 +83,7 @@
             <label class="edit">
               <input type="radio" value="No" name="metal_recycle">No
             </label>
+            <p id="alert2"><i class="bi bi-exclamation-circle"></i>This field is required</p>
 
           </div>
         </div>
@@ -82,7 +91,10 @@
         <button id="button" onclick="">Calculate</button>
       </form>
     </div>
-    <div class="result"></div>
+    <div class="result">
+       
+
+    </div>
   </body>
   <footer>
     <script src="./script.js" type="module"></script>
