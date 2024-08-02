@@ -26,7 +26,8 @@ button.addEventListener("click", function () {
   const outcome = document.querySelector("#outcome");
   const desc = document.querySelector("#desc");
   const avgemission = 1333333.33;
-
+  alert1.style.display="none"
+  alert2.style.display="none"
   if (
     !(recyclepaperno.checked || recyclepaperyes.checked) ||
     !(recycletinno.checked || recycletinyes.checked)
@@ -34,7 +35,7 @@ button.addEventListener("click", function () {
     if (!(recyclepaperno.checked || recyclepaperyes.checked)) {
       alert1.style.display = "block";
     }
-    if (!(recycletinno.checked || recyclepaperyes.checked)) {
+    if (!(recycletinno.checked || recycletinyes.checked)) {
       alert2.style.display = "block";
     }
 
@@ -81,7 +82,7 @@ button.addEventListener("click", function () {
   wasteresult.innerHTML = `Recycling the Waste : <span>${wasteScore}</span> g/month`;
   outcome.innerHTML = `Overall carbon Footprint : <span> ${totalScore}</span> g/month`;
   desc.innerHTML = `Your Calculated Footprint is ${percentage}% ${
-    outcome > avgemission ? "higher" : "leseser"
+    totalScore > avgemission ? "higher" : "leseser"
   } than avg. Indian Footrprint`;
   calculator.classList.remove("fade-in");
   result.classList.remove("fade-out");
